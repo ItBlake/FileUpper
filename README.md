@@ -4,13 +4,13 @@ A drag-and-drop `.bat` script that uploads files or folders to [0x0.st](https://
 
 ## ✨ Features
 
-- 🖱️ Drag & Drop support (files, folders, or multiple items)
+- 🖱️ Drag & Drop support (file/folders)
 - 📦 Automatically zips folders
 - 📏 Checks file size limit (512 MiB max per 0x0.st)
 - ⌛ Shows upload progress with `curl` bar
 - 🔗 Prints the resulting URL and copies it to clipboard
 - 📱 Generates a terminal-displayed QR code via [qrcd.to](https://qrcd.to)
-- 📝 Logs all uploads with timestamps to `upload_history.txt`
+- 📝 Logs all uploads with timestamps to `upload_history.txt` (Enabled by default)
 
 ## 🧰 Requirements
 
@@ -26,7 +26,7 @@ A drag-and-drop `.bat` script that uploads files or folders to [0x0.st](https://
 ## 🚀 Usage
 
 - **Single File**: Drag it onto the script to upload directly.
-- **Folder**: It will be zipped and uploaded if under the 512 MiB limit.
+- **Folder**: It will be zipped and uploaded.
 
 Upon success:
 - The URL is printed and copied to your clipboard.
@@ -42,9 +42,9 @@ Upon success:
 
 ## 🛠 Customization
 
-- Modify the `title` at the top of the script.
-- Replace the QR code generator with another if preferred.
-- Customize the log format in `upload_history.txt`.
+- Turn history logging ON/OFF.
+- Change log file's path
+- Customize the log format.
 
 ## 📃 License
 
